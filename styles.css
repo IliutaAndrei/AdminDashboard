@@ -1,5 +1,167 @@
 * {
-    margin: 0;
+    font-family: "Roboto", sans-serif;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+}
+
+.sidebar {
+    grid-row: 1 / 5;
+    grid-column: 1 / 2;
+    background: darkcyan;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.header {
+    grid-column: 2 / 7;
+    background-color: ghostwhite;
+    border-bottom: 5px darkgray solid;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-content {
+    grid-row: 2 / 5;
+    grid-column: 2 / 7;
+    background: rgba(128, 128, 128, 0.792);
+}
+
+.options {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.options2 {
+    display: grid;
+    grid-row: 3 / 5;
+    grid-template-rows: 7fr 1fr;
+    row-gap: 20px;
+    justify-items: center;
+    align-items: end;
+}
+
+.options, .options2 {
+    font-size: 1.2rem;
+}
+
+.card-home {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+span {
+    align-content: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.home {
+    justify-self: center;
+}
+
+.options img,
+.options2 img {
+    height: 25px;
+    width: 25px;
+}
+
+.card-options {
+    margin-bottom: 8px;
+}
+
+.search {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#search {
+    width: 800px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(211, 211, 211);
+}
+
+.search > img {
+    height: 100px;
+    width: 30px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.profile-pic {
+    grid-column: 3 / 4;
+}
+
+.bell {
+    grid-column: 2 / 3;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.notifications {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 3fr;
+    align-items: center;
+}
+
+.profile-photo {
+    justify-self: end;
+    margin-right: 20px;
+}
+
+.profile-nickname {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.welcome-message {
+    grid-column: 2 / 3; 
+}
+
+button {
+    border-radius: 15px;
+    color: white;
+    background: darkcyan;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: space-between;
+    gap: 20px;
+}
+
